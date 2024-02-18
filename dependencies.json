@@ -1,0 +1,6 @@
+{
+    "name": "optparser",
+    "dependencies": {
+        "sequence-analyzer": "latest"
+    }
+}
