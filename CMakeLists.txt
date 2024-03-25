@@ -7,7 +7,9 @@ enable_testing()
 set(CMAKE_CXX_STANDARD 20)
 
 add_library(optparser src/optparser.cpp
-    src/types/optvalue/defaults/int_rule.cpp)
+    src/types/optvalue/defaults/integral_rule.cpp
+    src/types/optvalue/defaults/floating_point_rule.cpp
+    include/optparser/option_entity_config.hpp)
 
 target_include_directories(optparser PRIVATE $ENV{ASUKA1975_INCLUDE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/include)
 target_link_directories(optparser PRIVATE $ENV{ASUKA1975_LD_LIBRARY_PATH})
